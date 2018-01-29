@@ -1,0 +1,549 @@
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #494A49;
+}
+
+/* Container */
+.container {
+  max-width: 1090px;
+  margin: auto;
+}
+
+@media only screen and (max-width:480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 64px;
+
+}
+
+    /* Nav Left */
+    .nav-left {
+      display: flex;
+      align-items: center;
+      margin-left: 24px;
+      height: 32px;
+    }
+
+    .nav-left-first {
+      font-weight: bold;
+      color: #494A49;
+    }
+
+    .nav-left-right {
+      color: #9A9B9A;
+    }
+
+    /* Nav Right */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      margin-right: 24px;
+      height: 32px;
+    }
+
+    .nav-right-item {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    /* Mobile Nav */
+    .nav-mobile {
+      padding-left: 24px;
+      padding-right: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      height: 64px;
+    }
+
+    /* Nav Switch Over */
+
+    @media only screen and (min-width:481px) and (max-width:2048px) {
+      .nav-mobile {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width:1px) and (max-width:480px) {
+      .nav {
+        display: none;
+      }
+    }
+
+
+/* Block 1 */
+.block1 {
+  display: flex;
+  padding: 32px 24px;
+  background-color: #D7D8D7;
+  align-items: center;
+}
+
+/* Mobile View */
+@media only screen and (min-width:1px) and (max-width:480px) {
+  .block1 {
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+}
+
+    /* Left Block 1-1 */
+    .block1-1 {
+      background-image: url('../images/banner.jpg');
+      background-size: cover;
+      height: 250px;
+      width: 60%;
+      margin-right: 24px;
+    }
+
+    /* Mobile View */
+    @media only screen and (min-width:1px) and (max-width:480px) {
+      .block1-1 {
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+
+    /* Right Block 1-2 */
+    .block1-2 {
+      width: 40%;
+      color: #494A49;
+    }
+
+    /* Mobile View */
+    @media only screen and (min-width:1px) and (max-width:480px) {
+      .block1-2 {
+        padding: 32px 16px;
+        width: 100%;
+      }
+    }
+
+    .block1-2 h1 {
+      font-weight: bold;
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+
+    .block1-2 h3 {
+      line-height: 1.5;
+    }
+
+    .button {
+      display: inline-block;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      width: 100%;
+      text-align: center;
+      background-color: #494A49;
+      color: white;
+      margin-top: 16px;
+    }
+
+    /* Mobile View */
+    @media only screen and (min-width:1px) and (max-width:480px) {
+      .button {
+        background-color: #9A9B9A;
+        font-weight: bold;
+      }
+    }
+
+/* Block 2 */
+
+.block2 {
+  display: flex;
+  padding: 32px 24px;
+  background-color: white;
+}
+
+/* Mobile View */
+@media only screen and (min-width:1px) and (max-width:480px) {
+  .block2 {
+    background-color: #F2F5F4;
+  }
+}
+
+    .block2-1 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 60%;
+      margin-right: 24px;
+    }
+
+    /* Mobile View */
+    @media only screen and (min-width:1px) and (max-width:480px) {
+      .block2-1 {
+        display: none;
+      }
+    }
+
+    /* Left Block 2-1 */
+    .block2-1-1 {
+      background-image: url('../images/information-main.jpg');
+      background-size: cover;
+      width: 100%;
+      height: 250px;
+    }
+
+    /* Right block items */
+    .item {
+      display: flex;
+      padding: 16px;
+    }
+
+    /* Mobile View */
+    @media only screen and (min-width:1px) and (max-width:480px) {
+      .item {
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+
+  /* Cards Detailed */
+
+    .content {
+      width: 65%;
+      padding-left: 16px;
+      color:#494A49;
+    }
+
+    .img {
+      width: 35%;
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Mobile View */
+    @media only screen and (min-width:1px) and (max-width:480px) {
+      .img {
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+      }
+    }
+
+      /* Right Block 2-2 */
+      .block2-2 {
+        width: 40%;
+        background-color: white;
+        padding: 5px;
+      }
+
+      /* Mobile View */
+      @media only screen and (min-width:1px) and (max-width:480px) {
+        .block2-2 {
+          width: 100%;
+          background-color: #F2F5F4;
+        }
+      }
+
+        /* Item 1 */
+        .item {
+          display: flex;
+        }
+
+        @media only screen and (min-width:481px) and (max-width:2048px) {
+          .image1 {
+            background-image: url('../images/information-orientation-mobile.jpg');
+          }
+        }
+
+        /* Mobile View */
+        @media only screen and (min-width:1px) and (max-width:480px) {
+          .image1 {
+            background-image: url('../images/information-orientation-mobile.jpg');
+          }
+        }
+
+        .readmore {
+          color: #4A90E1;
+        }
+
+        /* Item 2 */
+
+        @media only screen and (min-width:481px) and (max-width:2048px) {
+          .image2 {
+            background-image: url('../images/information-campus.jpg');
+          }
+        }
+
+        /* Mobile View */
+        @media only screen and (min-width:1px) and (max-width:480px) {
+          .image2 {
+            background-image: url('../images/information-campus-mobile.jpg');
+          }
+        }
+
+        /* Item 3 */
+
+        @media only screen and (min-width:481px) and (max-width:2048px) {
+          .image3 {
+            background-image: url('../images/information-guest-lecture.jpg');
+          }
+        }
+
+        /* Mobile View */
+        @media only screen and (min-width:1px) and (max-width:480px) {
+          .image3 {
+            background-image: url('../images/information-guest-lecture-mobile.jpg');
+          }
+        }
+
+
+        .item3 {
+          background-color: #D7D8D7;
+        }
+
+        /* Mobile View */
+        @media only screen and (min-width:1px) and (max-width:480px) {
+          .item3 {
+            background-color: #F2F5F4;
+          }
+        }
+
+
+/* Block 3 */
+.block3-main {
+  background-color: #E9EBEC;
+  padding: 32px 56px;
+}
+
+/* Mobile View */
+@media only screen and (min-width:1px) and (max-width:480px) {
+  .block3-main {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+    /* Heading */
+    .heading {
+      margin-bottom:32px;
+      text-align: center;
+    }
+
+    /* Mobile View */
+    @media only screen and (min-width:1px) and (max-width:480px) {
+      .heading {
+        margin: 0px;
+      }
+    }
+
+
+/* Block 3 Main container */
+
+.block3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+    /* Main Card */
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin: 16px;
+      width: 30%;
+      height: auto;
+    }
+
+    .card-head {
+      margin: 0;
+    }
+
+    .card-image {
+      height: 160px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+      background: white;
+    }
+
+    .card-body1 {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      color: #8E8F8E;
+    }
+
+    .card-body2 {
+      margin-bottom: 24px;
+      color: #8E8F8E;
+    }
+
+    /* Block 3-1 */
+    .card-image1 {
+      background-image: url('../images/course-software.jpg');
+    }
+
+    /* Block 3-2 */
+    .card-image2 {
+      background-image: url('../images/course-computer-art.jpg');
+    }
+
+    /* Block 3-3 */
+    .card-image3 {
+      background-image: url('../images/course-design.jpg');
+    }
+
+    /* Block 3-4 */
+    .card-image4 {
+      background-image: url('../images/course-data.jpg');
+    }
+
+    /* Block 3-5 */
+    .card-image5 {
+      background-image: url('../images/course-business.jpg');
+    }
+
+    /* Block 3-6 */
+    .card-image6 {
+      background-image: url('../images/course-marketing.jpg');
+    }
+
+/* Block 3 Mobile container */
+.block3mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px 0px 12px;
+  font-weight: bold;
+}
+
+.block3mobile span{
+  background-color: #D7D8D7;
+  padding: 16px 16px 24px 16px;
+  margin-bottom: 8px;
+}
+
+/* Block 3 Mobile Switch Over */
+
+@media only screen and (min-width:481px) and (max-width:2048px) {
+  .block3mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:1px) and (max-width:480px) {
+  .block3 {
+    display: none;
+  }
+}
+
+/* Block 4 // Same as Block 2 */
+
+.block4andfooter {
+  background-color: #F2F5F4;
+  padding-top: 32px;
+  padding-bottom: 16px
+}
+
+.block4 {
+  display: flex;
+  padding: 32px 24px;
+}
+
+/* Mobile View */
+@media only screen and (min-width:1px) and (max-width:480px) {
+  .block4 {
+    padding: 32px 0px 0px 0px;
+  }
+}
+
+    .block4-1 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 60%;
+      margin-right: 24px;
+    }
+
+    /* Mobile View */
+    @media only screen and (min-width:1px) and (max-width:480px) {
+      .block4-1 {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    /* Left Block 4-1 VIDEO BLOCK */
+
+    .block4-1-1 video {
+      width: 100%;
+      max-height: auto;
+      overflow:hidden;
+      background-size: cover;
+    }
+
+    /* Mobile View */
+    @media only screen and (min-width:1px) and (max-width:480px) {
+      .block4-1-2 {
+        display: none;
+      }
+    }
+
+      /* Right Block 4-2 */
+      .block4-2 {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Mobile View */
+      @media only screen and (min-width:1px) and (max-width:480px) {
+        .block4-2 {
+          display: none;
+        }
+      }
+
+        /* Item 1 */
+
+        .image4-1 {
+          background-image: url('../images/thesis-fisma.jpg');
+        }
+
+        .item4-1 {
+          background-color: #D7D8D7;
+        }
+
+        /* Item 2 */
+
+        .image4-2 {
+          background-image: url('../images/thesis-now-and-then.jpg');
+        }
+
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  color: grey;
+  padding: 16px 24px 50px 16px;
+}
+
+/* Mobile View */
+@media only screen and (min-width:1px) and (max-width:480px) {
+  .footerright {
+    display: none;
+  }
+}
